@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //8 type of data types in js
+        //1. string
+        //2. Number
+        //3. Bigint
+        //4. Boolean
+        //5. object
+        //6. symbol
+        //7. Null
+        //8. undefined
+
+        var str = 'Hardik saini'
+        var str1 = "Hardik saini"
+        var str2 = `Hardik saini`
+        console.log(typeof(str))
+        console.log(typeof(str1))
+        console.log(typeof(str2))
+
+        var num = 10
+        console.log(typeof(num))
+
+        var w = BigInt(278987654324567876543234567865234567865432456789765487654345678976543234567876543)
+        console.log(typeof(w))
+
+        var a = true
+        console.log(typeof(a))
+
+        let person = {
+            name : "Lavish",
+            sub : "Web development",
+            address : "kishangarh"                                  //data stored in object are in key-value pair
+        }
+
+        console.log(person.name)                                 //objectname.keyname
+        console.log(person.sub)
+        console.log(person.address)
+        console.log(person['name'])
+        console.log(person['sub'])
+        console.log(person['address'])
+
+    </script>
+</body>
+</html>

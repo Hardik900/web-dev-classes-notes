@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let str = 'Hardik';
+        let str1 = "10";
+        let str2 = `Hardik`;
+
+        console.log(str)
+        console.log(str1)
+        console.log(str2)
+        console.log(typeof(str),"typeof str")
+        console.log(typeof(str1),"typeof str")
+        console.log(typeof(str2),"typeof str")
+
+        let a = "Hello "
+        console.log(a.length,"length")
+
+        let string = "my name is HARDIK saini and my friend name is Yash"
+        console.log(string.length,"length")
+
+        let slice = string.slice(0,-1)
+        console.log(slice,)
+
+        let substring = string.substring(0,10)   //variable_name.method_name
+        console.log(substring,)
+
+        let substr = string.substr(0,3)
+        console.log(substr)
+
+        console.log(string)
+        let replace = string.replace("hardik", "Vishal")
+        console.log(replace)
+
+        let replaceAll = string.replaceAll("name", "ghvcufdbvuyfbvuhrbfvyrb")
+        console.log(replaceAll)
+
+        let upperCase = string.toUpperCase()
+        console.log(upperCase)
+
+        let lowerCase = string.toLowerCase();
+        console.log(lowerCase)
+
+        let concat = a.concat(string)
+        console.log(concat)
+
+        let str4 = "         Hello             "
+        console.log(str4.length,"before trim") 
+
+        let trimStart =  str4.trimStart()
+        console.log(trimStart.length ,"After trim Start")
+
+        let trimEnd = str4.trimEnd()
+        console.log(trimEnd.length,"after trim End")
+
+        let padStart = "5";
+        console.log(padStart.padStart(5,"0"))
+
+        let padEnd = "9"
+        let c = padEnd.padEnd(8,"*")
+        console.log(c)
+        console.log(c.length,"length")
+        
+        let str5 = "hi my name is Yash"
+        let char = str5.charAt(1)
+        console.log(char,"charAt method")
+
+        let str6 = "Yash90@gmail.com"
+        let split = str6.split("@")
+        console.log(split,"split")
+    </script>
+</body>
+</html>

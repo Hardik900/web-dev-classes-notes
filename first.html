@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script> -->
+        <!-- //internal -->
+    <!-- </script> -->
+</head>
+<body>
+    <h1>hello</h1>
+    <p id="demo" style="background-color: red;" >
+        hi Mr. lavish
+    </p>
+    <img src="" alt="">
+    <button onclick="fun()">click to see changes</button>
+    <b>Lavish</b>
+    <button onclick="document.write('hello my name is Yash')">click me</button>
+    <!-- external -->
+    <script>
+        //inline
+        //4 types to print in js
+        //1. console.log("hardik");
+        //2. window.alert("hardik");
+        //3. window.write("hardik");
+        //4. Document.getElementbyId("demo").innerHTML = "hardik saini"
+        //console.log("Lavish")
+        //document.write("Lavsih")
+        //alert("Lavish")
+        
+        //call a function
+        function fun(){
+            //document.getElementbyId("demo").innerHTML = "hardik saini";
+            document.getElementById("demo").innerHTML = "hardik saini";
+            document.getElementById("demo").style.backgroundColor = "green";
+        }
+        //document
+        //getElement
+        //byId("demo") 
+        //innerHTML
+        //=
+        //"hardik saini"  
+        
+        //var x = 6;
+        //if(x==5){
+        //    alert("value =5")
+        //}
+        //else{
+        //    alert("value not equal to 5")
+        //}
+
+        //s = 10
+        //console.log(s)
+
+        //3 types to define a variable scope in js
+        //1. var       -> global scope , redeclare ,reassign
+        //2. let        ->block scope, reassign, redecalre
+        //3. const      -> block scope, reassign, redeclare
+        
+        var a = 9;
+        console.log(a)
+        var a=10;
+        console.log(a)
+        {
+            let b = 12;
+            b = 16
+            let c =19
+            console.log(b)
+        }
+
+        {
+            const q = 45;
+            q = 34;
+            console.log(q)
+        }
+    </script>
+</body>
+</html>
