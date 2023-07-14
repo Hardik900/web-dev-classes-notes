@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = "My name is Hardik and Lavish ";
+        let length = str.length                                                        //variable in string.propertyname
+        console.log(length)
+
+        //escape characters
+        let escapeCharacter = "\"Hello my name is hardik\""
+        console.log(escapeCharacter)
+
+        let singlequote = 'It\'s my name'
+        console.log(singlequote)
+
+        let slice = str.slice(3,7)
+        let slice1 = str.slice(73,-1)
+        console.log(slice)
+        console.log(slice1,"slice1")
+        console.log(slice + ' ' + slice1)
+
+        let substring = str.substring(4,17)                                           //not take negative values
+        console.log(substring) 
+
+        let substr = str.substr(0,17)
+        console.log(substr)
+
+        let replace = str.replace("Hardik", "Yash")
+        console.log(replace)
+
+        let uppercase = str.toUpperCase()
+        console.log(uppercase)
+
+        let lowercase = str.toLowerCase()
+        console.log(lowercase)
+
+        let concat = str.concat(escapeCharacter)
+        console.log(concat)
+
+        let str1 = "                Hello                "
+        console.log(str1.length)
+        let trimstart = str1.trimStart()
+        console.log(trimstart.length)
+    
+        let padStart = "9"
+        padStart = padStart.padStart(6,"*")
+        console.log(padStart)
+
+        let charAt = str.charAt(1)
+        console.log(charAt)
+
+        let str2 = "Hello my name is Lavish and my friend name is Hardik"
+        let indexof = str2.indexOf("name")
+        console.log(indexof)
+
+        let lastIndexof = str2.lastIndexOf("name")
+        console.log(lastIndexof)
+
+        let search = str2.search("name")
+        console.log(search)
+
+        let startswith = str2.startsWith("name", 8)
+        console.log(startswith)
+
+        let endswith = str2.endsWith("Lavish", -8)
+        console.log(endswith)
+
+        let include = str2.includes("Lavish", 4)
+        console.log(include)
+    
+        let match = str2.match("name")
+        console.log(match)
+    </script>
+</body>
+</html>`
