@@ -1,1 +1,1 @@
-# web-dev-classes-notes
+# web-dev-classes-note
