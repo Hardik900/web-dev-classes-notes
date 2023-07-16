@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- onclick -->
+    <button onclick="alert('hello onclick event will be fire')">onclick</button>
+    <!-- onmouseover -->
+    <button onmouseover="alert('hello onclick event will be fire')">mouseover</button>
+    <!-- onmouseout -->
+    <button onmouseout="alert('hello onclick event will be fire')">mouseout</button>
+    <!-- onkeydown -->
+    <input type="text" onkeydown="alert('onkeydown event fire')"  placeholder="onkeydown">
+    <!-- onkeyup -->
+    <input type="text" onkeyup="alert('onkeydown event fire')"  placeholder="onkeyup">
+    <!-- onkeypress -->
+    <input type="text" onkeypress="fun()" placeholder="onkeypress">
+    <br>
+    <br>
+    <h1>form</h1>
+    <input type="text" onchange="change()" id="f_name" placeholder="First name">
+    <input type="text" id="L_name" placeholder="last name">
+    <input type="text" id="Adreess"placeholder="Adress">
+    <button onclick="submit()">click me</button>
+    <script>
+        function fun(){
+            alert("onkeypress event occur")
+        }
+
+        function submit(){
+            let f_name = document.getElementById('f_name').value;
+            let l_name = document.getElementById('L_name').value;
+            let Address = document.getElementById('Adreess').value;
+            console.log(f_name)
+            console.log(l_name)
+            console.log(Address)
+        }
+
+        function change(){
+            let fname = document.getElementById('f_name').value;
+            console.log(fname)
+        }
+    </script>
+    <!-- question -> first name, lastname, Email, mobilenumber, password -->
+</body>
+</html>

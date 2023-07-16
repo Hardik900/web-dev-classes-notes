@@ -7,76 +7,84 @@
 </head>
 <body>
     <script>
-        let str = "My name is Hardik and Lavish ";
+        let str = "My name is Hardik and Sam ";                                      //string length will always start from 1
         let length = str.length                                                        //variable in string.propertyname
         console.log(length)
 
         //escape characters
-        let escapeCharacter = "\"Hello my name is hardik\""
+        let escapeCharacter = "my name is \"Yash\""                                    //use to print double quotes inside the double quotes same as single quotes
         console.log(escapeCharacter)
 
         let singlequote = 'It\'s my name'
         console.log(singlequote)
 
-        let slice = str.slice(3,7)
-        let slice1 = str.slice(73,-1)
-        console.log(slice)
+        let slice = str.slice(11,17)
+        let slice1 = str.slice(-4,-1)
+        console.log(slice,"slice")
         console.log(slice1,"slice1")
         console.log(slice + ' ' + slice1)
 
-        let substring = str.substring(4,17)                                           //not take negative values
-        console.log(substring) 
+        let substring = str.substring(3,17)                                           //not take negative values
+        console.log(substring,"substring") 
 
-        let substr = str.substr(0,17)
-        console.log(substr)
+        let substr = str.substr(0,7)
+        console.log(substr, "substr")
 
         let replace = str.replace("Hardik", "Yash")
-        console.log(replace)
+        console.log(replace, "replace")
 
         let uppercase = str.toUpperCase()
-        console.log(uppercase)
+        console.log(uppercase,"uppercase")
 
         let lowercase = str.toLowerCase()
-        console.log(lowercase)
+        console.log(lowercase,"lowercase")
 
-        let concat = str.concat(escapeCharacter)
-        console.log(concat)
+        let concat = str.concat(escapeCharacter)                                            // +, concat
+        console.log(concat,"concat")
 
         let str1 = "                Hello                "
-        console.log(str1.length)
+        console.log(str1.length,"length")
         let trimstart = str1.trimStart()
-        console.log(trimstart.length)
+        console.log(trimstart,"trimstart")
+        let trimEnd = str1.trimEnd()
+        console.log(trimEnd,"trimEnd")
     
-        let padStart = "9"
+        let padStart = "8"
         padStart = padStart.padStart(6,"*")
         console.log(padStart)
 
-        let charAt = str.charAt(1)
-        console.log(charAt)
+        let padEnd = "8"
+        padEnd = padEnd.padEnd(6,"*")
+        console.log(padEnd)
 
-        let str2 = "Hello my name is Lavish and my friend name is Hardik"
+        let charAt = str.charAt(1)
+        console.log(charAt,"charAt")
+
+        let str2 = "Hello my name is Sam and my friend name is Hardik"
         let indexof = str2.indexOf("name")
-        console.log(indexof)
+        console.log(indexof,"indexof")
 
         let lastIndexof = str2.lastIndexOf("name")
-        console.log(lastIndexof)
+        console.log(lastIndexof,"lastIndexof")
 
         let search = str2.search("name")
-        console.log(search)
+        console.log(search,"search")
 
-        let startswith = str2.startsWith("name", 8)
-        console.log(startswith)
+        let startswith = str2.startsWith("name", 9)
+        console.log(startswith,"startswith")
 
-        let endswith = str2.endsWith("Lavish", -8)
-        console.log(endswith)
+        let endswith = str2.endsWith("Hardik")
+        console.log(endswith,"endswith")
 
-        let include = str2.includes("Lavish", 4)
-        console.log(include)
+        let include = str2.includes("Hardik", 4)
+        console.log(include,"include")
     
         let match = str2.match("name")
         console.log(match)
+        
+        let charCodeAt = str.charCodeAt(0);
+        console.log(charCodeAt)
 
-        console.log("jj")
     </script>
 </body>
-</html>`
+</html>
