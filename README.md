@@ -1,2 +1,2 @@
 # web-dev-classes-note
-# add day 5 notes
+# add day 6 notes
