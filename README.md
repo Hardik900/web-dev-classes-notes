@@ -1,2 +1,2 @@
-# web-dev-classes-note
+# web-dev-classes-notes
 # Add day 5 folder
